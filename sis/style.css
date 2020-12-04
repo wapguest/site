@@ -1,0 +1,131 @@
+* {border-radius:5px;}
+
+body {
+max-width: 548px;
+margin: 5px auto;
+font: 16px verdana, arial, helvetica, sans-serif;
+line-height:1.5;
+background:#f0f0f0;
+color:#191919;
+} 
+
+h1, h2, h3 {
+font-size:16px; 
+font-weight: normal; 
+padding:10px; 
+background:#c6d0df;
+} 
+
+a {color:#161a62; text-decoration:none}
+a:hover {text-decoration:underline}
+
+header {
+background:#2166f2;
+text-align:center;
+padding:10px;
+border:1px solid #317873;
+}
+
+.news {
+background:#cbcba9;
+border:1px solid #e6e6fa;
+padding:10px;
+}
+.news a  {text-decoration:underline; color:#983C2A} 
+.news a:hover  {color:#000080}
+
+.glavnews {
+background:#ecebdf;
+color:#00008b;
+border:1px solid #e6e6fa;
+padding:10px;
+line-height:1.8;
+}
+
+div {
+background:#ebebeb;
+padding:10px;
+}
+
+.div {
+background:#ced0d4;
+border:1px solid #e6e6fa;
+padding:10px;
+}
+.min {
+background:#e6e6fa;
+border:1px solid #abdd9e;
+padding:5px;
+line-height:1.1; 
+font-size:0.8em
+}
+
+.foot {
+background:#21662f;
+padding:10px;
+border:1px solid #4b9681;
+}
+.foot a {color:#52af52;}
+
+.keliya {
+border: 1px solid #000080; 
+background: #ced0d4;
+}
+.keliya a:link {
+border: 1px solid #000080; 
+font-size: 1.1em;
+padding: 0px 5px;
+}
+.keliya a:hover {
+text-decoration: none;
+}
+
+.keliyatable {
+border: 1px solid #000080; 
+background: #ced0d4;
+text-align: center;
+margin: auto;
+padding: 15px;
+}
+.keliyath {
+border: 1px solid #000080;
+padding: 15px;
+}
+
+/* */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6b92b9;
+    background-image: url('/sis/img/snow.png'), url('/sis/img/snow3.png'), url('/sis/img/snow2.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-color:#b4cfe0;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#6b92b9;}
+}
+
+@-ms-keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
