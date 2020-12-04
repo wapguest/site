@@ -4,8 +4,8 @@ DirectoryIndex index.html
 AddDefaultCharset UTF-8
 Options -Indexes
 
-ErrorDocument 403 /str/403/index.html
-ErrorDocument 404 /str/404/index.html
+ErrorDocument 403 /str/403/
+ErrorDocument 404 /str/404/
 
 RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]
