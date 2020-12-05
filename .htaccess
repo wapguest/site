@@ -1,6 +1,6 @@
 php_value date.timezone "Europe/Moscow"
 
-DirectoryIndex index.htm
+DirectoryIndex index.html
 AddDefaultCharset UTF-8
 Options -Indexes
 
@@ -8,14 +8,14 @@ ErrorDocument 403 /str/403.html
 ErrorDocument 404 /str/404.html
 
 RewriteEngine On
-RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^([^.]+)$ $1.html [NC,L] 
 
-RewriteEngine On
-RewriteRule ^index.html$ / [QSA,R]
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.(.*)$
-RewriteRule ^(.*)$ https://%1/$1 [L,R=301] 
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteCond %{HTTPS}s ^on(s)|off
+RewriteCond http%1://%{HTTP_HOST} ^(https?://)(www\.)?(.+)$
+RewriteRule ^ %1%3%{REQUEST_URI} [R=301,L] 
 
 # мои ограничения на файлы
 RewriteCond %{HTTP_REFERER} !^$
