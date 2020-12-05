@@ -11,6 +11,9 @@ RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]
 
 RewriteEngine On
+RewriteRule ^index.html$ / [QSA,R]
+
+RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.(.*)$
 RewriteRule ^(.*)$ https://%1/$1 [L,R=301] 
 
